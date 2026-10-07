@@ -1,0 +1,20 @@
+[project]
+name = "hello-jev"
+version = "0.1.0"
+description = "Jev（TypeSafe AI）を出題者にして遊ぶ「20の質問」CLI"
+readme = "README.md"
+authors = [
+    { name = "Yuta Wanikawa", email = "wanimaru47@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.10",
+]
