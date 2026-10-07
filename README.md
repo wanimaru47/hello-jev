@@ -6,14 +6,14 @@ Jev（TypeSafe AI）に出題者をさせて「20の質問」を遊ぶ CLI。
 
 - Python 3.14 以上
 - [uv](https://docs.astral.sh/uv/)
-- TypeSafe の API キー（環境変数 `TYPESAFE_API_KEY`）
+- TypeSafe の API キー（`.env` の `TYPESAFE_API_KEY`）
 
 ## 遊び方
 
 ```console
 $ uv sync
-$ export TYPESAFE_API_KEY=...
-$ uv run hello-jev
+$ cp .env.example .env    # TYPESAFE_API_KEY を書き換える
+$ uv run --env-file .env hello-jev
 お題を決めました。はい/いいえで答えられる質問をどうぞ（残り20問）
 当てるときは「答え：〇〇」と入力してください
 Q1> それは動物ですか？
